@@ -1,0 +1,14 @@
+<section class="container">
+    <h1>Nova transferência</h1>
+    <form class="form-content" (ngSubmit)="transfer()">
+        <div class="div-input">
+            <label>Conta</label>
+            <input type="text" [(ngModel)]="account" name="account"/>
+        </div>
+        <div class="div-input">
+            <label>Valor</label>
+            <input type="number" [(ngModel)]="value" name="value"/>
+        </div>
+        <button type="submit" class="send-button">Transferir</button>
+    </form>
+</section>

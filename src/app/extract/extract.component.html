@@ -1,0 +1,18 @@
+<table class="table">
+    <thead class="header">
+        <th>Conta</th>
+        <th>Valor</th>
+        <th>Data</th>
+    </thead>
+    <tbody *ngIf="transfers.length > 0; else notTransfers">
+        <tr *ngFor="let transfer of transfers" class="tr-content">
+            <td class="content-table">{{transfer?.account}}</td>
+            <td class="content-table">{{transfer?.value | currency}}</td>
+            <td class="content-table">{{transfer?.date | date: "short"}}</td>
+        </tr>
+    </tbody>
+    <ng-template #notTransfers class="not-content">
+        <p>Nenhuma operação cadastrada</p>
+    </ng-template>
+</table>
+

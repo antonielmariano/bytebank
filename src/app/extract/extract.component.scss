@@ -1,0 +1,26 @@
+.table{
+    width: 550px;
+    background-color: #1D1D1D;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.header{
+    height: 40px;
+}
+.content-table{
+    padding: 10px;
+}
+.tr-content{
+    background-color: #2C2C2C;
+}
+.not-content{
+    width: 100%;
+    padding: 20px;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
